@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javscript</title>
+</head>
+<body>
+      
+   <script>
+let ary = [55,66,55,66,77,88,99,88];
+let result ={};
+for(let a=0;a< ary.length;a++){
+    if (ary[a] in result) {
+        result[ary[a]] = result[ary[a]]+1;
+    }else{
+        result[ary[a]] = 1;
+    }
+};
+
+Object.keys(result).forEach(
+    function(key){
+        if(result[key]==1){
+            let fresult = key; 
+            document.write(fresult + "<br>")   
+           }
+    }
+)
+ 
+
+// console.log(result);
+   
+   </script>
+</body>
+</html>
